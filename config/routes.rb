@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  root to: "grid#index"
-  mount ActionCable.server => "/cable"
-
+  resources :games
+  root to: 'games#index'
 end

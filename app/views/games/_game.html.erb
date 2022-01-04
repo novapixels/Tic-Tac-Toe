@@ -1,0 +1,18 @@
+<div>
+<% 3.times do |row| %>
+  <div class="table-row d-flex">
+    <% 3.times do |col| %>
+      <span class="table-cell d-flex justify-content-center align-items-center">
+      <% if !game[row, col].nil? %>
+        <%= game[row, col] %>
+      <% else %>
+        <a href="#"> <%= game.current_symbol %></a> </span>
+      <% end %>
+
+    <% end %>
+  </div>
+<% end %>
+</div>
+
+
+<i class="bi bi-circle-fill"></i>

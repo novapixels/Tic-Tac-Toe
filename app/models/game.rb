@@ -9,6 +9,10 @@ class Game < ApplicationRecord
     self.current_symbol = [:x, :o].sample
   end
 
+  def [](row, col)
+    state[row.to_s][col.to_s]
+  end
+
   def move!(row, col)
     # Leave a mark at row/col coordinates
     state[row.to_s][col.to_s] = current_symbol
