@@ -11,12 +11,12 @@ class GamesController < ApplicationController
     redirect_to Game.create
   end
 
-  private
+  # private
 
-  def game_params
-    params.require(:game).permit(
-      :state,
-      :current_symbol
-    )
-  end
+  # def game_params
+  #   params.require(:game).permit(
+  #     :state,
+  #     :current_symbol
+  #   )
+  # end
 end
