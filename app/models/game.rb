@@ -9,6 +9,8 @@ class Game < ApplicationRecord
     self.current_symbol = [:x, :o].sample
   end
 
+  after_update_commit { broadcast_update }
+
   def [](row, col)
     state[row.to_s][col.to_s]
   end

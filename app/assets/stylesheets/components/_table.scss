@@ -1,12 +1,19 @@
 .table-row {
+  display: flex;
   width: 300px;
-  height: 100px;
+  height: 300px;
+  flex-direction: column;
 }
 .table-cell {
   flex-grow: 1;
-  border: 2px solid grey;
+  border: 1px solid rgb(232, 232, 232);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-i {
-  font-size: 40px;
+.body {
+  background-color: black;
 }
+// i {
+//   font-size: 40px;
+// }
