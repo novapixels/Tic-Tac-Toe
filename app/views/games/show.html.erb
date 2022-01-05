@@ -1,7 +1,11 @@
-<h1>Games</h1>
+<div class="mt-5 pt-5 ml-5 pl-5 mr-5 pr-5">
+  <h1>Tic Tac Toe</h1>
+  <p>Share the link in your url to invite the other player</p>
+  <p class="mb-3"><strong>Rule:</strong> The first to line up 3 'x' or 'o' straight in the grid wins.</p>
 
-<%= turbo_stream_from @game %>
-
-<div class="d-flex" id="<% dom_id(@game) %>">
+  <%= turbo_stream_from @game %>
+  <div class="d-flex" id="<% dom_id(@game) %>">
   <%= render @game %>
+
+  </div>
 </div>

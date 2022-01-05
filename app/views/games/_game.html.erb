@@ -1,5 +1,4 @@
-
-
+<div class="d-flex">
 <% 3.times do |row| %>
   <div class="table-row">
     <% 3.times do |col| %>
@@ -7,12 +6,12 @@
         <% if !game[row, col].nil? %>
           <%= game[row, col] %>
         <% else %>
-          <%= button_to game.current_symbol, game_moves_path(game), params: { row: row, col: col }, method: :post %>
+          <%= button_to game.current_symbol, game_moves_path(game), params: { row: row, col: col }, method: :post, class: 'btn hidden-custom-symbol' %>
         <% end %>
       </span>
     <% end %>
   </div>
 <% end %>
-
+</div>
 
 <%# <i class="bi bi-circle-fill"></i> %>

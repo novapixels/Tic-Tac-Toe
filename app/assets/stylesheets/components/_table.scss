@@ -6,7 +6,9 @@
 }
 .table-cell {
   flex-grow: 1;
-  border: 1px solid rgb(232, 232, 232);
+  max-width: 600px;
+  max-height: 600px;
+  border: 1px solid #2D4263;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,6 +16,25 @@
 .body {
   background-color: black;
 }
-// i {
-//   font-size: 40px;
-// }
+span.table-cell:first-child {
+  border-top: none;
+}
+span.table-cell:last-child {
+  border-bottom: none;
+}
+div.table-row:first-child span {
+  border-left: none;
+}
+div.table-row:last-child span {
+  border-right: none;
+}
+
+span {
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hidden-custom-symbol {
+  opacity: 0;
+  padding: 20px;
+}
