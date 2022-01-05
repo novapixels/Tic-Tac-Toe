@@ -1,7 +1,9 @@
-<h1>Games</h1>
+<div class="d-flex flex-column align-items-center align-self-center">
+  <h1 class="mt-5 pt-5">Tic Tac Toe</h1>
 
-
-<form action="/games" method="post">
-  <input type="hidden" name="authenticity_token" value="<% form_authenticity_token %>">
-  <input type="submit" value="New game">
-</form>
+  <p>Play this classic game with another friend</p>
+  <form action="/games" method="post">
+    <input type="hidden" name="authenticity_token" value="<% form_authenticity_token %>">
+    <input class="btn btn-primary btn-custom" type="submit" value="Start new game">
+  </form>
+</div>

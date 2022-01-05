@@ -1,0 +1,17 @@
+body {
+  background-color: #ECDBBA;
+  display: flex;
+  justify-content: space-around;
+}
+
+h1, h2, h3, p, span {
+  color: #191919;
+}
+
+.btn-custom {
+  background-color: #2D4263;
+  border: none;
+}
+.btn-custom:hover {
+  background-color: #49689b;
+}
